@@ -1,28 +1,25 @@
 <?php
-include("database.php");
+// include("database.php");
 $user = 0;
 $success = 0;
+$emptyUsername = 0;
+$emptyPassword = 0;
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    include("database.php");
     $username = filter_input(INPUT_POST, "username", FILTER_SANITIZE_SPECIAL_CHARS);
     $password = filter_input(INPUT_POST, "password", FILTER_SANITIZE_SPECIAL_CHARS);
     if (empty($username)) {
-        echo "Enter a username please!";
+        // echo "Enter a username please!";
+        $emptyUsername = 1;
     } elseif (empty($password)) {
-        echo "Please enter a password";
+        // echo "Please enter a password";
+        $emptyPassword = 1;
     } else {
-        // $hash = password_hash($password, PASSWORD_DEFAULT);
-        // $sql = "INSERT INTO signupinfo(username, password) Values('$username','$hash')";
-        // try {
-        //     mysqli_query($conn, $sql);
-        //     echo "User registration successful!";
-        // } catch (mysqli_sql_exception) {
-        //     echo "User registration failed!";
-        // }
         $sql = "SELECT * FROM signupinfo WHERE username = '$username'";
         $result = mysqli_query($conn, $sql);
         if ($result) {
             $num = mysqli_num_rows($result);
-            if ($num > 0) {
+            if ($num == 1) {
                 $user = 1;
             } else {
                 $hash = password_hash($password, PASSWORD_DEFAULT);
@@ -31,6 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     mysqli_query($conn, $sql);
                     // echo "User registration successful!";
                     $success = 1;
+                    header('location:login.php');
                 } catch (mysqli_sql_exception) {
                     echo "User registration failed!";
                 }
@@ -50,22 +48,33 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 </head>
 
 <body>
-    <?php
-    if ($user) {
-        echo '<div class="alert alert-danger alert-dismissible fade show" role="alert">
+
+    <div class="container mt-5 w-50">
+        <h2 class="text-center">Welcome to Fakebook</h2><br>
+        <?php
+        if ($emptyUsername) {
+            echo '<div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>Please!</strong> Enter a username first.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>';
+        } elseif ($emptyPassword) {
+            echo '<div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>Please!</strong> Enter a password.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>';
+        }
+        if ($user) {
+            echo '<div class="alert alert-danger alert-dismissible fade show" role="alert">
         <strong>Sory!</strong> User already exists.
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
       </div>';
-    }
-    if ($success) {
-        echo '<div class="alert alert-success alert-dismissible fade show" role="alert">
+        } elseif ($success) {
+            echo '<div class="alert alert-success alert-dismissible fade show" role="alert">
         <strong>Successful!</strong> You have successfully registered.
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
       </div>';
-    }
-    ?>
-    <div class="container mt-5 w-50">
-        <h2 class="text-center">Welcome to Fakebook</h2><br>
+        }
+        ?>
         <form action="<?php htmlspecialchars($_SERVER["PHP_SELF"]) ?>" method="post">
             <div class="mb-3">
                 <label>Username:</label>

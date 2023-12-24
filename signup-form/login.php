@@ -1,15 +1,16 @@
 <?php
 
-$user = 0;
-$success = 0;
+$login = 0;
+$invalidUsername = 0;
+$invalidPassword = 0;
+$emptyField = 0;
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     include("database.php");
     $username = filter_input(INPUT_POST, "username", FILTER_SANITIZE_SPECIAL_CHARS);
     $password = filter_input(INPUT_POST, "password", FILTER_SANITIZE_SPECIAL_CHARS);
-    if (empty($username)) {
-        echo "Enter a username please!";
-    } elseif (empty($password)) {
-        echo "Please enter a password";
+    if (empty($username) && empty($password)) {
+        // echo "You didn't put any credential";
+        $emptyField = 1;
     } else {
         // $hash = password_hash($password, PASSWORD_DEFAULT);
         $sql = "SELECT * FROM signupinfo WHERE username = '$username'";
@@ -26,13 +27,19 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 $hashedPassword = $row['password'];
                 // echo $hashedPassword;
                 if (!password_verify($password, $hashedPassword)) {
-                    echo "Invalid password!";
+                    // echo "Invalid password!";
+                    $invalidPassword = 1;
                 } else {
-                    echo "Logged in successful";
+                    // echo "Logged in successful";
+                    $login = 1;
+                    session_start();
+                    $_SESSION['username'] = $username;
+                    header('location:home.php');
                 }
             } else {
 
-                echo "Invalid username";
+                // echo "Invalid username";
+                $invalidUsername = 1;
             }
         } catch (mysqli_sql_exception) {
             echo "Something went wrong";
@@ -60,8 +67,37 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 </head>
 
 <body>
+
     <div class="container mt-5 w-50">
         <h2 class="text-center">Login to Fakebook</h2><br>
+        <?php
+        if ($invalidUsername) {
+            echo '<div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>Sory!</strong> invalid username!
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>';
+        } elseif ($invalidPassword) {
+            echo '<div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>Sory!</strong> invalid password!
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>';
+        } elseif ($emptyField) {
+            echo '<div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>Sory!</strong> You didn\'t put any credential!
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>';
+        } elseif ($login) {
+            echo '<div class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong>Successful!</strong> You have successfully registered.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>';
+        } else {
+            echo '<div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>Sory!</strong> invalid username & password!
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>';
+        }
+        ?>
         <form action="<?php htmlspecialchars($_SERVER["PHP_SELF"]) ?>" method="post">
             <div class="mb-3">
                 <label>Username:</label>
@@ -78,5 +114,5 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 </html>
 <?php
-mysqli_close($conn);
+// mysqli_close($conn);
 ?>
