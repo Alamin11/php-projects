@@ -1,11 +1,11 @@
 <?php
-// include("database.php");
+include("database.php");
 $user = 0;
 $success = 0;
 $emptyUsername = 0;
 $emptyPassword = 0;
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    include("database.php");
+    // include("database.php");
     $username = filter_input(INPUT_POST, "username", FILTER_SANITIZE_SPECIAL_CHARS);
     $password = filter_input(INPUT_POST, "password", FILTER_SANITIZE_SPECIAL_CHARS);
     if (empty($username)) {
@@ -50,7 +50,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <body>
 
     <div class="container mt-5 w-50">
-        <h2 class="text-center">Welcome to Fakebook</h2><br>
+        <h2 class="text-center">Sign up to Fakebook</h2><br>
         <?php
         if ($emptyUsername) {
             echo '<div class="alert alert-danger alert-dismissible fade show" role="alert">

@@ -1,11 +1,11 @@
 <?php
-
+include("database.php");
 $login = 0;
 $invalidUsername = 0;
 $invalidPassword = 0;
 $emptyField = 0;
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    include("database.php");
+    // include("database.php");
     $username = filter_input(INPUT_POST, "username", FILTER_SANITIZE_SPECIAL_CHARS);
     $password = filter_input(INPUT_POST, "password", FILTER_SANITIZE_SPECIAL_CHARS);
     if (empty($username) && empty($password)) {
