@@ -29,6 +29,43 @@
 
     <!-- Header section ends  -->
 
+    <!-- services section starts -->
+
+    <section class="services">
+        <h1 class="heading-title">our services</h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="images/icon1.png" alt="">
+                <h3>adventure</h3>
+            </div>
+            <div class="box">
+                <img src="images/icon2.png" alt="">
+                <h3>trakking</h3>
+            </div>
+            <div class="box">
+                <img src="images/icon3.png" alt="">
+                <h3>tour guide</h3>
+            </div>
+            <div class="box">
+                <img src="images/icon4.png" alt="">
+                <h3>camp firing</h3>
+            </div>
+            <div class="box">
+                <img src="images/icon5.png" alt="">
+                <h3>off road</h3>
+            </div>
+            <div class="box">
+                <img src="images/icon6.png" alt="">
+                <h3>camping</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- services section starts -->
+
+
+
+
     <!-- footer section starts -->
     <section class="footer">
         <div class="box-container">
@@ -68,7 +105,7 @@
 
     </section>
     <!-- footer section ends -->
-    
+
     <!-- swiper js file link  -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- custom js file link  -->

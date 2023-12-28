@@ -47,6 +47,14 @@ section {
     padding: 5rem;
 }
 
+.heading-title {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: var(--color-black);
+}
+
 .header {
     position: sticky;
     top: 0;
@@ -83,9 +91,37 @@ section {
     display: none;
 }
 
+/* service section starts */
 
+.services .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap: 1.5rem;
+}
 
+.services .box-container .box {
+    padding: 3rem 2rem;
+    text-align: center;
+    background: var(--color-main);
+    cursor: pointer;
+}
 
+.services .box-container .box:hover {
+    background: var(--color-black);
+}
+
+.services .box-container .box img {
+    height: 7rem;
+    /* color: var(--color-white); */
+}
+
+.services .box-container .box h3 {
+    color: var(--color-white);
+    font-size: 1.7rem;
+    padding-top: 1rem;
+}
+
+/* service section ends */
 
 
 
@@ -207,5 +243,9 @@ section {
 @media(max-width:450px) {
     html {
         font-size: 50%;
+    }
+
+    .heading-title {
+        font-size: 3rem;
     }
 }
