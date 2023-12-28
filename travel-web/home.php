@@ -29,6 +29,43 @@
 
     <!-- Header section ends  -->
 
+    <!-- service section starts -->
+
+    <section class="home">
+        <div class="swiper home-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide" style="background: url(images/home-slide-1.jpeg) no-repeat">
+                    <div class="content">
+                        <span>explore, discover, travel</span>
+                        <h3>travel around the world</h3>
+                        <a class="btn" href="package.php">discover more</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide" style="background: url(images/home-slide-2.jpg) no-repeat;">
+                    <div class="content">
+                        <span>explore, discover, travel</span>
+                        <h3>life is short and there is more to explore</h3>
+                        <a class="btn" href="package.php">discover more</a>
+                    </div>
+                </div>
+                <div class="swiper-slide slide" style="background: url(images/home-slide-3.jpg) no-repeat;">
+                    <div class="content">
+                        <span>explore, discover, travel</span>
+                        <h3>new place new experience</h3>
+                        <a class="btn" href="package.php">discover more</a>
+                    </div>
+
+                </div>
+            </div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+
+    <!-- service section ends -->
+
     <!-- services section starts -->
 
     <section class="services">

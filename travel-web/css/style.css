@@ -47,6 +47,21 @@ section {
     padding: 5rem;
 }
 
+.btn {
+    display: inline-block;
+    background: var(--color-black);
+    margin-top: 1rem;
+    color: var(--color-white);
+    font-size: 1.7rem;
+    padding: 1rem 3rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--color-main);
+}
+
+
 .heading-title {
     text-align: center;
     margin-bottom: 3rem;
@@ -89,6 +104,43 @@ section {
     font-size: 2.5rem;
     color: var(--color-black);
     display: none;
+}
+
+/* home section */
+.home {
+    padding: 0;
+}
+
+.home .slide {
+    text-align: center;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover !important;
+    background-position: center !important;
+    min-height: 60rem;
+    background-color: grey;
+}
+
+.home .slide .content {
+    width: 85rem;
+}
+
+.home .slide .content span {
+    display: block;
+    font-size: 2.2rem;
+    color: var(--color-light-white);
+    padding-bottom: 1rem;
+}
+
+.home .slide .content h3 {
+    font-size: 6vw;
+    color: var(--color-white);
+    text-transform: uppercase;
+    line-height: 1;
+    text-shadow: var(--text-shadow);
+    padding: 1rem 0;
 }
 
 /* service section starts */
