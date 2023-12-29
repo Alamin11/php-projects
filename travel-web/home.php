@@ -14,6 +14,8 @@
 </head>
 
 <body>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <!-- header section starts  -->
 
     <section class="header">
@@ -34,7 +36,7 @@
     <section class="home">
         <div class="swiper home-slider">
             <div class="swiper-wrapper">
-                <div class="swiper-slide slide" style="background: url(images/home-slide-1.jpeg) no-repeat">
+                <div class="swiper-slide slide" style="background: url(images/home-slide-1.jpg) no-repeat">
                     <div class="content">
                         <span>explore, discover, travel</span>
                         <h3>travel around the world</h3>
@@ -98,7 +100,20 @@
         </div>
     </section>
 
-    <!-- services section starts -->
+    <!-- services section ends -->
+
+    <!-- home about section starts -->
+    <section class="home-about">
+        <div class="image">
+            <img src="images/about.jpg" alt="about image">
+        </div>
+        <div class="content">
+            <h3>about us</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis voluptates tempore explicabo pariatur reprehenderit iusto sequi totam corrupti quae soluta architecto incidunt praesentium, nihil, animi dolor suscipit. Suscipit, hic aliquam.</p>
+            <a href="about.php" class="btn">read more</a>
+        </div>
+    </section>
+    <!-- home about section ends -->
 
 
 

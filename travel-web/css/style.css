@@ -44,7 +44,14 @@ html::-webkit-scrollbar-thumb {
 }
 
 section {
-    padding: 5rem;
+    padding: 5rem 10%;
+}
+
+@keyframes fadeIn {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
 }
 
 .btn {
@@ -120,11 +127,16 @@ section {
     background-size: cover !important;
     background-position: center !important;
     min-height: 60rem;
-    background-color: grey;
+    /* background-color: grey; */
 }
 
 .home .slide .content {
     width: 85rem;
+    display: none;
+}
+
+.home .swiper-slide-active .content {
+    display: inline-block;
 }
 
 .home .slide .content span {
@@ -132,6 +144,7 @@ section {
     font-size: 2.2rem;
     color: var(--color-light-white);
     padding-bottom: 1rem;
+    animation: fadeIn .4s linear backwards .2s;
 }
 
 .home .slide .content h3 {
@@ -141,6 +154,39 @@ section {
     line-height: 1;
     text-shadow: var(--text-shadow);
     padding: 1rem 0;
+    animation: fadeIn .4s linear backwards .4s;
+
+}
+
+.home .slide .content .btn {
+    animation: fadeIn .4s linear backwards .6s;
+
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    /* top: inherit; */
+    /* left: inherit; */
+    /* bottom: 0; */
+    /* right: 0; */
+    height: 7rem;
+    width: 7rem;
+    background: var(--color-black);
+    /* background-color: transparent; */
+    opacity: .45;
+    color: var(--color-white);
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    color: var(--color-white);
+    background: var(--color-main);
+    opacity: .7;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    font-size: 2rem;
 }
 
 /* service section starts */
@@ -175,6 +221,40 @@ section {
 
 /* service section ends */
 
+/* home about section starts */
+.home-about {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.home-about .image {
+    flex: 1 1 41rem;
+}
+
+.home-about .image img {
+    width: 100%;
+}
+
+.home-about .content {
+    flex: 1 1 41rem;
+    padding: 3rem;
+    background: var(--color-light-bg);
+}
+
+.home-about .content h3 {
+    font-size: 3rem;
+    color: var(--color-black);
+}
+
+.home-about .content p {
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    line-height: 2;
+    color: var(--color-black);
+}
+
+/*home about section ends*/
 
 
 
@@ -187,12 +267,14 @@ section {
     /* background-color: var(--color-main); */
     background-position: center;
     /* background-attachment: fixed; */
+    /* justify-content: center; */
+
 }
 
 .footer .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    gap: 3rem;
+    gap: 2rem;
 }
 
 .footer .box-container .box h3 {
@@ -256,6 +338,10 @@ section {
 
     section {
         padding: 3rem 2rem;
+    }
+
+    .home .slide .content h3 {
+        font-size: 10vw;
     }
 }
 
