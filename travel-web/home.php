@@ -115,6 +115,47 @@
     </section>
     <!-- home about section ends -->
 
+    <!-- home package section starts -->
+    <section class="home-package">
+        <h1 class="heading-title">our packages</h1>
+        <div class="box-container">
+            <div class="box">
+                <div class="image">
+                    <img src="images/package-img-1.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <h3>adventure & tours</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto blanditiis voluptas enim asperiores dolore voluptatum quae, voluptatem consequatur odit voluptates.</p>
+                    <a href="book.php" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/package-img-2.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <h3>adventure & tours</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto blanditiis voluptas enim asperiores dolore voluptatum quae, voluptatem consequatur odit voluptates.</p>
+                    <a href="book.php" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/package-img-3.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <h3>adventure & tours</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto blanditiis voluptas enim asperiores dolore voluptatum quae, voluptatem consequatur odit voluptates.</p>
+                    <a href="book.php" class="btn">book now</a>
+                </div>
+            </div>
+        </div>
+        <div class="load-more">
+            <a href="package.php" class="btn">load more</a>
+        </div>
+    </section>
+
+    <!-- home package section starts -->
 
 
 
