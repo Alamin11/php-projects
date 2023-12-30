@@ -307,9 +307,31 @@ section {
     margin-top: 2rem;
 }
 
-
 /* home package section ends*/
 
+/* <!-- home offer section starts here --> */
+.home-offer {
+    text-align: center;
+}
+
+.home-offer .content {
+    max-width: 50rem;
+    margin: 0 auto;
+}
+
+.home-offer .content h3 {
+    font-size: 3.5rem;
+    color: var(--color-black);
+}
+
+.home-offer .content p {
+    font-size: 1.5rem;
+    color: var(--color-light-black);
+    line-height: 2;
+    padding: 1rem 0;
+}
+
+/* <!-- home offer section ends here --> */
 
 
 /* footer section start*/

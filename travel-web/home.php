@@ -155,8 +155,17 @@
         </div>
     </section>
 
-    <!-- home package section starts -->
+    <!-- home package section ends here -->
 
+    <!-- home offer section starts here -->
+    <section class="home-offer">
+        <div class="content">
+            <h3>upto 50% off</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit necessitatibus dicta omnis nulla voluptas alias porro illo, sit ipsa magnam.</p>
+            <a href="book.php" class="btn">book mow</a>
+        </div>
+    </section>
+    <!-- home offer section ends here -->
 
 
     <!-- footer section starts -->
