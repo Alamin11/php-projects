@@ -68,6 +68,30 @@ section {
     background-color: var(--color-main);
 }
 
+.heading {
+    background-size: cover !important;
+    background-position: center !important;
+    padding-top: 10rem;
+    padding-bottom: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .heading h1 {
+    font-size: 10rem;
+    text-transform: uppercase;
+    color: var(--color-white);
+    text-shadow: var(--text-shadow);
+} */
+
+/* #about-heading {
+    font-size: 10rem;
+    text-transform: uppercase;
+    color: var(--color-white);
+    text-shadow: var(--text-shadow);
+} */
+
 
 .heading-title {
     text-align: center;
@@ -193,7 +217,7 @@ section {
 
 .services .box-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     gap: 1.5rem;
 }
 
@@ -331,6 +355,70 @@ section {
     padding: 1rem 0;
 }
 
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 3rem;
+}
+
+.about .image {
+    flex: 1 1 41rem;
+}
+
+.about .image img {
+    width: 100%;
+}
+
+.about .content {
+    flex: 1 1 41rem;
+    text-align: center;
+}
+
+.about .content h3 {
+    font-size: 3rem;
+    color: var(--color-black);
+}
+
+.about .content p {
+    font-size: 1.5rem;
+    color: var(--color-light-black-black);
+    line-height: 2;
+    padding: 1rem 0;
+
+}
+
+.about .content .icons-container {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: flex-end;
+}
+
+.about .content .icons-container .icons {
+    background: var(--color-light-bg);
+    padding: 2rem;
+    flex: 1 1 16rem;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.about .content .icons-container .icons i {
+    font-size: 4rem;
+    /* margin-bottom: 1rem; */
+    padding-right: 1rem;
+    color: var(--color-main);
+}
+
+.about .content .icons-container .icons span {
+    font-size: 1.5rem;
+    color: var(--color-light-black);
+    /* text-size-adjust: calc(); */
+    display: block;
+}
+
 /* <!-- home offer section ends here --> */
 
 
@@ -348,7 +436,7 @@ section {
 
 .footer .box-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     gap: 2rem;
 }
 

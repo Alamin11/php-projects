@@ -36,7 +36,7 @@
     <section class="home">
         <div class="swiper home-slider">
             <div class="swiper-wrapper">
-                <div class="swiper-slide slide" style="background: url(images/home-slide-1.jpg) no-repeat">
+                <div class="swiper-slide slide" style="background: url(images/home-slide-11.jpg) no-repeat">
                     <div class="content">
                         <span>explore, discover, travel</span>
                         <h3>travel around the world</h3>
@@ -44,14 +44,14 @@
                     </div>
                 </div>
 
-                <div class="swiper-slide slide" style="background: url(images/home-slide-2.jpg) no-repeat;">
+                <div class="swiper-slide slide" style="background: url(images/home-slide-22.jpg) no-repeat;">
                     <div class="content">
                         <span>explore, discover, travel</span>
                         <h3>life is short and there is more to explore</h3>
                         <a class="btn" href="package.php">discover more</a>
                     </div>
                 </div>
-                <div class="swiper-slide slide" style="background: url(images/home-slide-3.jpg) no-repeat;">
+                <div class="swiper-slide slide" style="background: url(images/home-slide-33.jpg) no-repeat;">
                     <div class="content">
                         <span>explore, discover, travel</span>
                         <h3>new place new experience</h3>
@@ -121,7 +121,7 @@
         <div class="box-container">
             <div class="box">
                 <div class="image">
-                    <img src="images/package-img-1.jpeg" alt="">
+                    <img src="images/package-img-1.jpg" alt="">
                 </div>
                 <div class="content">
                     <h3>adventure & tours</h3>
@@ -131,7 +131,7 @@
             </div>
             <div class="box">
                 <div class="image">
-                    <img src="images/package-img-2.jpeg" alt="">
+                    <img src="images/package-img-2.jpg" alt="">
                 </div>
                 <div class="content">
                     <h3>adventure & tours</h3>
@@ -141,7 +141,7 @@
             </div>
             <div class="box">
                 <div class="image">
-                    <img src="images/package-img-3.jpeg" alt="">
+                    <img src="images/package-img-3.jpg" alt="">
                 </div>
                 <div class="content">
                     <h3>adventure & tours</h3>
@@ -166,6 +166,7 @@
         </div>
     </section>
     <!-- home offer section ends here -->
+
 
 
     <!-- footer section starts -->

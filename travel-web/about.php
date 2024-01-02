@@ -28,9 +28,39 @@
     </section>
     <!-- Header section ends  -->
 
-    <div class="heading" style="background:url(images/heading-img-1.jpg) no-repeate">
-        <h1>about us</h1>
+    <div class="heading" style="background:url(images/about-heading.jpg) no-repeat">
+        <h1 style="color:white; text-transform:uppercase; font-size:10rem;
+        text-shadow:0 1.5rem 3rem rgba(0, 0, 0, .3); ">about us</h1>
     </div>
+    <!-- about section starts -->
+    <section class="about">
+        <div class="image">
+            <img src="images/about.jpg" alt="">
+        </div>
+        <div class="content">
+            <h3>why choose us?</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione distinctio, blanditiis sequi quae quod laborum.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est delectus mollitia doloremque.</p>
+            <div class="icons-container">
+                <div class="icons">
+                    <i class="fas fa-map"></i>
+                    <span>top destinaton</span>
+                </div>
+                <div class="icons">
+                    <i class="fas fa-hand-holding-usd"></i>
+                    <span>affordable price</span>
+                </div>
+                <div class="icons">
+                    <i class="fas fa-headset"></i>
+                    <span>24/7 guide service</span>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- about section ends -->
+
 
 
 
