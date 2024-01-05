@@ -61,6 +61,92 @@
 
     <!-- about section ends -->
 
+    <!-- reviews section starts -->
+
+    <section class="reviews">
+        <h3>Client's reviews</h3>
+        <div class="swiper reviews-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem in magnam, sit saepe nemo quas?</p>
+                    <h3>Md. Al amin</h3>
+                    <span>traveller</span>
+                    <img src="images/pic-1.jpg" alt="al amin">
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi alias magnam quas voluptatem iusto totam, quo soluta rem illum dolor!</p>
+                    <h3>Sammy</h3>
+                    <span>event organizer</span>
+                    <img src="images/pic-2.jpg" alt="al amin">
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, velit! Sed facere corrupti voluptatibus doloremque.</p>
+
+                    <h3>John</h3>
+                    <span>traveller</span>
+                    <img src="images/pic-3.jpg" alt="al amin">
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem quae iure molestias impedit culpa id.</p>
+                    <h3>Samiha khanom</h3>
+                    <span>traveller</span>
+                    <img src="images/pic-4.jpg" alt="al amin">
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit doloremque consequatur officia alias minus quaerat consequuntur ex magni enim voluptatum!</p>
+                    <h3>Sazid</h3>
+                    <span>traveller</span>
+                    <img src="images/pic-5.jpg" alt="al amin">
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque sapiente repellendus autem ipsa, itaque magnam..</p>
+                    <h3>Ariz</h3>
+                    <span>guide</span>
+                    <img src="images/pic-6.jpg" alt="ariz">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- reviews section ends -->
 
 
 

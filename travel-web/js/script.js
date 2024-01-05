@@ -11,24 +11,34 @@ window.onscroll = () => {
     navbar.classList.remove('active');
 };
 
-const swiper = new Swiper('.home-slider', {
-    // Optional parameters
-    // direction: 'vertical',
+var swiper = new Swiper('.home-slider', {
+
     loop: true,
-
-    // If we need pagination
-    // pagination: {
-    //     el: '.swiper-pagination',
-    // },
-
-    // Navigation arrows
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
+});
 
-    // // And if we need scrollbar
-    // scrollbar: {
-    //   el: '.swiper-scrollbar',
-    // },
+var swiper = new Swiper('.reviews-slider', {
+
+    loop: true,
+    spaceBetween: 20,
+    autoHeight: true,
+    grabCursor: true,
+    breakpoints: {
+        640: {
+            slidesPerView: 1,
+
+        },
+        768: {
+            slidesPerView: 2,
+
+        },
+        1024: {
+            slidesPerView: 3,
+
+        },
+    },
+
 });
