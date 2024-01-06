@@ -78,12 +78,12 @@ section {
     justify-content: center;
 }
 
-/* .heading h1 {
+.heading h1 {
     font-size: 10rem;
     text-transform: uppercase;
     color: var(--color-white);
     text-shadow: var(--text-shadow);
-} */
+}
 
 /* #about-heading {
     font-size: 10rem;
@@ -297,6 +297,10 @@ section {
     background: var(--color-white);
 }
 
+.packages .box-container .box:hover .image img {
+    transform: scale(1.1);
+}
+
 .home-package .box-container .box .image {
     height: 25rem;
     overflow: hidden;
@@ -480,6 +484,69 @@ section {
 /* reviews section ends */
 
 /* <!-- home offer section ends here --> */
+
+/* package section starts */
+.packages .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+}
+
+.packages .box-container .box {
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    background: var(--color-white);
+    display: none;
+}
+
+.packages .box-container .box:nth-child(1),
+.packages .box-container .box:nth-child(2),
+.packages .box-container .box:nth-child(3),
+.packages .box-container .box:nth-child(4),
+.packages .box-container .box:nth-child(5),
+.packages .box-container .box:nth-child(6) {
+    display: inline-block;
+}
+
+.home-package .box-container .box:hover .image img {
+    transform: scale(1.1);
+}
+
+.packages .box-container .box .image {
+    height: 25rem;
+    overflow: hidden;
+}
+
+.packages .box-container .box .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+}
+
+.packages .box-container .box .content {
+    padding: 2rem;
+    text-align: center;
+}
+
+.packages .box-container .box .content h3 {
+    font-size: 2.5rem;
+    color: var(--color-black);
+}
+
+.packages .box-container .box .content p {
+    font-size: 1.5rem;
+    color: var(--color-light-black);
+    line-height: 2;
+    padding: 1rem 0;
+}
+
+.packages .load-more {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* package section ends */
 
 
 /* footer section start*/

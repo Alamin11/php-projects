@@ -29,8 +29,7 @@
     <!-- Header section ends  -->
 
     <div class="heading" style="background:url(images/about-heading.jpg) no-repeat">
-        <h1 style="color:white; text-transform:uppercase; font-size:10rem;
-        text-shadow:0 1.5rem 3rem rgba(0, 0, 0, .3); ">about us</h1>
+        <h1>about us</h1>
     </div>
     <!-- about section starts -->
     <section class="about">

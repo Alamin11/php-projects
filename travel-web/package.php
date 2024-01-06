@@ -28,9 +28,140 @@
     </section>
     <!-- Header section ends  -->
 
-    <div class="heading" style="background:url(images/heading-img-1.jpg) no-repeate">
-        <h1>our services</h1>
+    <div class="heading" style="background:url(images/package-heading.jpg) no-repeat">
+        <h1> our packages</h1>
     </div>
+    <!-- package section starts -->
+
+    <section class="packages">
+        <h1 class="heading-title">top destination</h1>
+        <div class="box-container">
+            <div class="box">
+                <div class="image">
+                    <img src="images/60-dome-mosque.jpg" alt="destination 1">
+                </div>
+                <div class="content">
+                    <h3>60 dome mosque</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, quasi.</p>
+                    <a href="book.php" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/kangchenjunga.jpg" alt="destination 1">
+                </div>
+                <div class="content">
+                    <h3>kangchenjunga</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, quasi.</p>
+                    <a href="book.php" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/syllet.jpg" alt="destination 1">
+                </div>
+                <div class="content">
+                    <h3>syllet</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, quasi.</p>
+                    <a href="book.php" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/vatiary.jpg" alt="destination 1">
+                </div>
+                <div class="content">
+                    <h3>Vatiary</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, quasi.</p>
+                    <a href="book.php" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/kaptailake.jpg" alt="destination 1">
+                </div>
+                <div class="content">
+                    <h3>kaptai lake</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, quasi.</p>
+                    <a href="book.php" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/mohamaya-lake.jpg" alt="destination 1">
+                </div>
+                <div class="content">
+                    <h3>mohamaya lake</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, quasi.</p>
+                    <a href="book.php" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/kasmir.jpg" alt="destination 1">
+                </div>
+                <div class="content">
+                    <h3>jammu kasmir</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, quasi.</p>
+                    <a href="book.php" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/rangamati.jpg" alt="destination 1">
+                </div>
+                <div class="content">
+                    <h3>rangamati bridge</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, quasi.</p>
+                    <a href="book.php" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/saintmartin.jpg" alt="destination 1">
+                </div>
+                <div class="content">
+                    <h3>saintmartin iland</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, quasi.</p>
+                    <a href="book.php" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/sydney.jpg" alt="destination 1">
+                </div>
+                <div class="content">
+                    <h3>sydney harbour</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, quasi.</p>
+                    <a href="book.php" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/naiagra.jpg" alt="destination 1">
+                </div>
+                <div class="content">
+                    <h3>naiagra falls</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, quasi.</p>
+                    <a href="book.php" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/ifeltower.jpg" alt="destination 1">
+                </div>
+                <div class="content">
+                    <h3>ifel tower</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, quasi.</p>
+                    <a href="book.php" class="btn">book now</a>
+                </div>
+            </div>
+        </div>
+        <div class="load-more"><span class="btn">load more</span></div>
+
+    </section>
+
+    <!-- package section ends -->
 
 
 
