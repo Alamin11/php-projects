@@ -28,9 +28,53 @@
     </section>
     <!-- Header section ends  -->
 
-    <div class="heading" style="background:url(images/heading-img-2.jpg) no-repeate">
+    <div class="heading" style="background:url(images/booking-heading.jpg) no-repeat">
         <h1>book now</h1>
     </div>
+    <!-- booking section starts -->
+
+    <section class="booking">
+        <h1 class="heading-title">book your trip!</h1>
+        <form action="book_form.php" method="post" class="book-form">
+            <div class="flex">
+                <div class="inputBox">
+                    <span>name :</span>
+                    <input type="text" placeholder="Enter your name" name="name">
+                </div>
+                <div class="inputBox">
+                    <span>email :</span>
+                    <input type="email" placeholder="Enter your email" name="email">
+                </div>
+                <div class="inputBox">
+                    <span>phone no. :</span>
+                    <input type="number" placeholder="Enter your mobile number" name="phone">
+                </div>
+                <div class="inputBox">
+                    <span>address :</span>
+                    <input type="text" placeholder="Enter your address" name="address">
+                </div>
+                <div class="inputBox">
+                    <span>where to :</span>
+                    <input type="text" placeholder="place you want to visit" name="location">
+                </div>
+                <div class="inputBox">
+                    <span>number of guests :</span>
+                    <input type="number" placeholder="how many guests?" name="guests">
+                </div>
+                <div class="inputBox">
+                    <span>arrivals date :</span>
+                    <input type="date" name="arrivals">
+                </div>
+                <div class="inputBox">
+                    <span>leaving date :</span>
+                    <input type="date" name="leaving">
+                </div>
+            </div>
+            <input type="submit" value="submit" class="btn" name="send">
+        </form>
+    </section>
+
+    <!-- booking section ends -->
 
 
 
