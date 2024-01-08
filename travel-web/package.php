@@ -17,7 +17,7 @@
     <!-- header section starts  -->
 
     <section class="header">
-        <a href="home.php" class="logo">x-traveller</a>
+        <a href="home.php" class="logo"><span class="logo-img"><img src="images/logo.png" alt=""></span>x-traveller</a>
         <nav class="navbar">
             <a href="home.php">home</a>
             <a href="about.php">about</a>
