@@ -1,2 +1,2 @@
-# Travel app using PHP, JS, MySQL
-## toursandtravel.lovestoblog.com
+# Full functional and responsive Travel app using PHP, JS, MySQL
+## https://toursandtravel.lovestoblog.com/index.php
